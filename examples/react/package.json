@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "preinstall": "../common/preinstall.sh",
+    "postinstall": "../common/postinstall.sh"
+  }
+}

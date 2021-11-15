@@ -1,0 +1,36 @@
+load("@aspect_bazel_lib//lib:utils.bzl", "path_to_workspace_root")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("@npm//@swc/cli:index.bzl", "swc")
+
+# Transpile to js with swc
+swc(
+    name = "dist",
+    args = [
+        "src",
+        "-d",
+        "%s/$(@D)" % path_to_workspace_root(),
+    ],
+    chdir = package_name(),
+    data = [
+        ".swcrc",
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    output_dir = True,
+)
+
+# Run the service
+nodejs_binary(
+    name = "server",
+    data = [
+        ":dist",
+        "@npm//:node_modules",
+    ],
+    entry_point = {":dist": "main.js"},
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob(["src/**/*"]),
+)

@@ -1,0 +1,16 @@
+load("//bazel/rules:nextjs.bzl", "nextjs_build")
+
+# Build the application with next.js
+nextjs_build(
+    name = "dist",
+    data = glob([
+        "components/**/*",
+        "lib/**/*",
+        "pages/**/*",
+        "posts/**/*",
+        "public/**/*",
+        "styles/**/*",
+    ]) + [
+        "@npm//:node_modules",
+    ],
+)

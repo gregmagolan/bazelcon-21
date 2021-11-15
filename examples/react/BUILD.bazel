@@ -1,0 +1,161 @@
+load("@aspect_bazel_lib//lib:copy_to_directory.bzl", "copy_to_directory")
+load("@aspect_bazel_lib//lib:utils.bzl", "path_to_workspace_root")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary", "npm_package_bin")
+load("@io_bazel_rules_sass//:defs.bzl", "multi_sass_binary")
+load("@npm//@swc/cli:index.bzl", "swc")
+load("@npm//html-insert-assets:index.bzl", "html_insert_assets")
+load("@npm//typescript:index.bzl", "tsc_test")
+load("//bazel/rules:history_server.bzl", "history_server")
+
+# Compile sass
+multi_sass_binary(
+    name = "css",
+    srcs = [":sass_sources"],
+)
+
+# Compile typescript with swc
+swc(
+    name = "js",
+    args = [
+        "src",
+        "--no-swcrc",
+        "--source-maps",
+        "--config-file",
+        "%s/$(execpath .swcrc-compile)" % path_to_workspace_root(),
+        "--out-dir",
+        "%s/$(@D)" % path_to_workspace_root(),
+    ],
+    chdir = package_name(),
+    data = [
+        ".swcrc-compile",
+        ":ts_sources",
+        "@npm//:node_modules",
+    ],
+    output_dir = True,
+)
+
+# Bundle js with swc (spack)
+nodejs_binary(
+    name = "spack-bazel-entry",
+    data = [
+        "@npm//@swc/cli",
+        "@npm//@swc/core",
+    ],
+    entry_point = ":spack-bazel-entry.js",
+    visibility = ["//examples/react:__subpackages__"],
+)
+
+npm_package_bin(
+    name = "bundle",
+    outs = [
+        "bundle.js",
+        "bundle.js.map",
+    ],
+    args = [
+        # --entry is parsed out by custom tool entry point & not forwarded to the underlying tool cli
+        "--entry",
+        "%s/$(execpath :js)/entry.js" % path_to_workspace_root(),
+        # --output is parsed out by custom tool entry point & not forwarded to the underlying tool cli
+        "--out-file",
+        "%s/$(RULEDIR)/bundle.js" % path_to_workspace_root(),
+    ],
+    chdir = package_name(),
+    data = [
+        "spack.config.js",
+        ":js",
+        "@npm//:node_modules",
+    ],
+    # Use a custom tool binary which uses a customized entry point
+    tool = ":spack-bazel-entry",
+)
+
+# Minify with swc
+swc(
+    name = "minify",
+    outs = [
+        "bundle.min.js",
+        "bundle.min.js.map",
+    ],
+    args = [
+        "$(execpath :bundle.js)",
+        "--no-swcrc",
+        "--source-maps",
+        "--config-file",
+        "$(execpath .swcrc-minify)",
+        "--out-file",
+        "$(RULEDIR)/bundle.min.js",
+    ],
+    data = [
+        ".swcrc-minify",
+        ":bundle",
+        ":bundle.js",
+        "@npm//:node_modules",
+    ],
+)
+
+# Typecheck with typescript compiler
+tsc_test(
+    name = "typecheck",
+    args = [
+        "-p",
+        "$(execpath tsconfig.json)",
+        "--noEmit",
+    ],
+    data = [
+        "tsconfig.json",
+        ":ts_sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# Insert scripts and assets into the source index.html
+html_insert_assets(
+    name = "index",
+    outs = ["index.html"],
+    args = [
+        "--html $(location :src/index.html)",
+        "--out $@",
+        "--stamp",
+        "--stylesheets",
+        "css/app.css",
+        "--scripts",
+        "js/bundle.min.js",
+    ],
+    data = ["src/index.html"],
+)
+
+# Merge all of the output artifacts into a dist directory
+copy_to_directory(
+    name = "dist",
+    srcs = [
+        ":css",
+        ":index",
+        ":minify",
+    ],
+    replace_prefixes = {
+        "bundle.": "js/bundle.",
+        "src/assets/stylesheets": "css",
+    },
+)
+
+# Serve the site with history-server
+history_server(
+    name = "serve",
+    port = 8080,
+    root = ":dist",
+)
+
+# Convienience target
+filegroup(
+    name = "ts_sources",
+    srcs = glob([
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ]),
+)
+
+# Convienience target
+filegroup(
+    name = "sass_sources",
+    srcs = glob(["src/**/*.scss"]),
+)

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "preinstall": "../common/preinstall.sh",
+    "postinstall": "../common/postinstall.sh"
+  }
+}

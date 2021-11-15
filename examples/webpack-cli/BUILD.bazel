@@ -1,0 +1,32 @@
+load("@aspect_bazel_lib//lib:utils.bzl", "path_to_workspace_root")
+load("@npm//webpack-cli:index.bzl", "webpack_cli")
+
+# Build the application with webpack
+webpack_cli(
+    name = "dist",
+    args = [
+        "--mode=production",
+        "--config=./webpack.config.production.js",
+        "--output-path=%s/$(@D)" % path_to_workspace_root(),
+    ],
+    chdir = package_name(),
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    output_dir = True,
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "src/**/*",
+    ]) + [
+        ".browserslistrc",
+        "env.config.js",
+        "tsconfig.json",
+        "webpack.config.development.js",
+        "webpack.config.production.js",
+    ],
+)

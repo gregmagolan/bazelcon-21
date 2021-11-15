@@ -1,0 +1,72 @@
+load(
+    "//bazel/rules:angular_cli.bzl",
+    "angular_cli_build",
+    "angular_cli_run",
+    "angular_cli_test",
+)
+
+# Builds the application in development mode
+angular_cli_build(
+    name = "build",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    target = "angular.io-example:build:development",
+)
+
+# Builds the application in developproductionment mode
+angular_cli_build(
+    name = "build_production",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    target = "angular.io-example:build:production",
+)
+
+# Runs units tests with karma
+# NB: This test target is not fully hermetic as it uses your locally install
+# chromium which is the default setting for the karma tests
+angular_cli_test(
+    name = "test",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    target = "angular.io-example:test",
+)
+
+# Serves the application in development mode
+angular_cli_run(
+    name = "start",
+    chdir = "chdir.js",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    target = "angular.io-example:serve:development",
+)
+
+# TODO: add e2e, lint & serve_production targets
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "src/**/*",
+    ]) + [
+        "angular.json",
+        "karma.conf.js",
+        "tsconfig.app.json",
+        "tsconfig.json",
+        "tsconfig.spec.json",
+        "tslint.json",
+    ],
+)
+
+# Convienience target
+filegroup(
+    name = "e2e_sources",
+    srcs = glob(["e2e/**/*"]),
+)

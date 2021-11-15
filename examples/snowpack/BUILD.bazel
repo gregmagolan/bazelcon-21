@@ -1,0 +1,30 @@
+load("@aspect_bazel_lib//lib:utils.bzl", "path_to_workspace_root")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary", "npm_package_bin")
+
+nodejs_binary(
+    name = "snowpack-bazel-entry",
+    data = ["@npm//snowpack"],
+    entry_point = ":snowpack-bazel-entry.js",
+    visibility = ["//examples/snowpack:__subpackages__"],
+)
+
+npm_package_bin(
+    name = "dist",
+    args = [
+        "build",
+        # --out-dir is parsed out by custom tool entry point & not forwarded to the underlying tool cli
+        "--out-dir",
+        "%s/$(@D)" % path_to_workspace_root(),
+    ],
+    chdir = package_name(),
+    data = [
+        "snowpack.config.js",
+        "@npm//:node_modules",
+    ] + glob([
+        "src/**/*",
+        "public/**/*",
+    ]),
+    output_dir = True,
+    # Use a custom tool binary which uses a customized entry point
+    tool = ":snowpack-bazel-entry",
+)

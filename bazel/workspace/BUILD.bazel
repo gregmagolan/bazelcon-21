@@ -1,0 +1,5 @@
+# All repository rules and WORKSPACE dependencies should go in this package
+
+exports_files([
+    "yarn-postinstall.sh",
+])

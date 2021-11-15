@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "preinstall": "../common/preinstall.sh",
+    "postinstall": "../common/postinstall.sh"
+  }
+}

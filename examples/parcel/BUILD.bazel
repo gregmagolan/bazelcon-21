@@ -1,0 +1,25 @@
+load("//bazel/rules:http_server.bzl", "http_server")
+load("//bazel/rules:parcel.bzl", "parcel")
+
+# Build the site with parcel
+parcel(
+    name = "dist",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    entry_html = "index.html",
+)
+
+# Serve the site with http-server
+http_server(
+    name = "serve",
+    port = 3000,
+    root = ":dist",
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob(["src/**/*"]),
+)

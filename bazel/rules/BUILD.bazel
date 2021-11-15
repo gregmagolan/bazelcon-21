@@ -1,0 +1,12 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+
+exports_files([
+    "nextjs-bazel-entry.js",
+])
+
+nodejs_binary(
+    name = "nextjs-bazel-entry",
+    data = ["@npm//next"],
+    entry_point = "nextjs-bazel-entry.js",
+    visibility = ["//visibility:public"],
+)

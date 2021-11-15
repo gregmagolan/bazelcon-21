@@ -1,0 +1,46 @@
+load("//bazel/rules:vue.bzl", "vue")
+
+# Build the site with vue
+vue(
+    name = "dist",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# TODO: add a serve target
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "public/**/*",
+        "src/**/*",
+    ]) + [
+        ".browserslistrc",
+        ".env",
+        "babel.config.js",
+        "package.json",
+        "postcss.config.js",
+        "vue.config.js",
+    ],
+)
+
+# load("@aspect_bazel_lib//lib:utils.bzl", "path_to_workspace_root")
+# load("@npm//@vue/cli-service:index.bzl", "vue_cli_service")
+
+# # Build the application with vue
+# vue_cli_service(
+#     name = "dist",
+#     args = [
+#         "build",
+#         "--dest=%s/$(@D)" % path_to_workspace_root(),
+#     ],
+#     chdir = package_name(),
+#     data = [
+#         ":sources",
+#         "@npm//:node_modules",
+#     ],
+#     output_dir = True,
+# )
