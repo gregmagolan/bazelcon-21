@@ -1,0 +1,41 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("//bazel/rules:jest_test.bzl", "jest_test")
+
+# Run jest test
+jest_test(
+    name = "test",
+    data = [
+        "jest.config.js",
+        ":sources",
+        ":test_sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# Run the server
+nodejs_binary(
+    name = "server",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    entry_point = "src/index.js",
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "src/**/*",
+    ]),
+)
+
+# Convienience target
+filegroup(
+    name = "test_sources",
+    srcs = glob([
+        "test/**/*",
+    ]) + [
+        "jest.config.js",
+    ],
+)

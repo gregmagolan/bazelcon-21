@@ -1,0 +1,25 @@
+load("//bazel/rules:nextjs.bzl", "nextjs_build")
+
+# Build the application with next.js
+nextjs_build(
+    name = "dist",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# TODO: add a serve target
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "components/**/*",
+        "lib/**/*",
+        "pages/**/*",
+        "posts/**/*",
+        "public/**/*",
+        "styles/**/*",
+    ]),
+)

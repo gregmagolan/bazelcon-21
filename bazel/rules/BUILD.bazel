@@ -1,0 +1,25 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+
+nodejs_binary(
+    name = "nextjs-bazel-entry",
+    data = ["@npm//next"],
+    entry_point = "nextjs-bazel-entry.js",
+    visibility = ["//visibility:public"],
+)
+
+nodejs_binary(
+    name = "snowpack-bazel-entry",
+    data = ["@npm//snowpack"],
+    entry_point = ":snowpack-bazel-entry.js",
+    visibility = ["//visibility:public"],
+)
+
+nodejs_binary(
+    name = "swcpack-bazel-entry",
+    data = [
+        "@npm//@swc/cli",
+        "@npm//@swc/core",
+    ],
+    entry_point = ":swcpack-bazel-entry.js",
+    visibility = ["//visibility:public"],
+)

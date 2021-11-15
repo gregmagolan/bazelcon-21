@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest test/**.test.js",
+    "coverage": "jest test/**.test.js --coverage",
+    "preinstall": "../common/preinstall.sh",
+    "postinstall": "../common/postinstall.sh"
+  }
+}

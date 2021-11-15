@@ -1,0 +1,29 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("//bazel/rules:swc.bzl", "swc_compile")
+
+# Compile ts to js with swc
+swc_compile(
+    name = "dist",
+    args = ["src"],
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+    swcrc = ".swcrc",
+)
+
+# Run the service
+nodejs_binary(
+    name = "server",
+    data = [
+        ":dist",
+        "@npm//:node_modules",
+    ],
+    entry_point = {":dist": "main.js"},
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob(["src/**/*"]),
+)

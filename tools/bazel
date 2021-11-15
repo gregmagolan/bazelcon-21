@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Bazelisk looks for this file, and runs it in place of the Bazel command if present.
+# See https://github.com/bazelbuild/bazelisk/blob/master/README.md#other-features
+# This gives us a place to create a custom environment for Bazel to run in.
+
+# Bazelisk prevents re-entry where it calls itself in a loop, by setting this variable
+# https://github.com/bazelbuild/bazelisk/blob/7af7115a134fcc1a16348739c3e635ef3bd29c71/core/core.go#L394
+# We can use this to detect whether the user ran Bazelisk
+if [[ "${BAZELISK_SKIP_WRAPPER:-}" != "true" ]]; then
+    echo>&2 "ERROR: You have installed Bazel directly, but should use Bazelisk instead"
+    echo>&2 "This ensures we run the version of Bazel indicated in .bazelversion"
+    echo>&2 ""
+    echo>&2 "The typical resolution is to run"
+    echo>&2 "    brew uninstall bazel; brew install bazelisk"
+    exit 1
+fi
+
+set -eu
+
+exec -a bazel "${BAZEL_REAL}" "$@"

@@ -1,0 +1,146 @@
+################################################
+# Default configuration flags for bazel
+#
+# The flags specified here are automatically applied
+# to bazel cli calls depending on command
+################################################
+
+################################################
+# General
+################################################
+
+# Enable platform specific configuration
+common --enable_platform_specific_config
+
+################################################
+# Cache
+################################################
+
+# Cache actions outputs on local disk so they persist across output_base and
+# bazel shutdown (eg. changing branches) 
+#
+# NB: disabled for now as the even with experimental_remote_merkle_tree_cache
+# the cache is not persistent so there is one 10s+ hit on every bazel run where
+# the merkle of @npm//:node_modules needs to calculated. After the first hit,
+# all subsequent actions can re-use the calculated merkle tree for node_modules.
+# Since most actions in this repo depend on @npm//:node_modules we disable the
+# disk_cache so avoid the merkle calculation, which is only needed to check for
+# remote cache hits (disk cache is a local implementation of a "remote" cache).
+# If we have fine grained npm dependencies this would reduce the initial hit
+# of any one action and would enabling the disk_cache less of a trade off.
+#
+# build --disk_cache=~/.cache/bazel-disk-cache
+
+# Remote cache optimizations
+build --experimental_inmemory_jdeps_files
+build --experimental_inmemory_dotd_files
+
+# Prevent concurrent local file modification from poisoning the build cache
+build --experimental_guard_against_concurrent_changes
+
+################################################
+# CLI
+################################################
+
+# Turn on color & curses for cli output
+common --color=yes
+common --curses=yes
+
+# Show the output files created by builds that requested more than one target.
+# This helps users locate the build outputs in more cases
+build --show_result=20
+
+# Minimum number of seconds between progress messages in the output.
+build --show_progress_rate_limit=0
+
+# Include timestamps in messages
+build --show_timestamps
+
+# Prints verbose messages when workers are started, shutdown
+build --worker_verbose
+
+################################################
+# Build
+################################################
+
+# Allow the Bazel server to check directory sources for changes Avoids warning
+# spam with rules_nodejs feature that models node_modules as directories See
+# https://github.com/bazelbuild/rules_nodejs/releases/tag/3.6.0
+startup --host_jvm_args=-DBAZEL_TRACK_SOURCE_DIRECTORIES=1
+
+# Bazel will create symlinks from the workspace directory to output artifacts.
+# Build results will be placed in a directory called ".bazel/bin"
+# Other directories will be created like ".bazel/testlogs"
+build --symlink_prefix=.bazel/
+
+# Turn off legacy external runfiles
+# This prevents accidentally depending on this feature, which Bazel will remove.
+build --nolegacy_external_runfiles
+
+# Turn on --incompatible_strict_action_env which was on by default
+# in Bazel 0.21.0 but turned off again in 0.22.0. Follow
+# https://github.com/bazelbuild/bazel/issues/7026 for more details.
+# This flag is needed to so that the bazel cache is not invalidated
+# when running bazel via `yarn bazel`.
+# See https://github.com/angular/angular/issues/27514.
+build --incompatible_strict_action_env
+
+# Make direct file system calls to create symlink trees
+build --experimental_inprocess_symlink_creation
+
+# Workers will be executed in a sandboxed environment
+build --worker_sandboxing
+
+################################################
+# Test
+################################################
+
+# Exclusive tests will run with sandboxed strategy
+# This is important for system tests which are currently tagged exclusive since
+# they use fixed ports for containerized services
+test --incompatible_exclusive_test_sandboxed
+
+# We want to be able to run `bazel test --test_timeout_filter=short` and have a
+# meaningful result: run the fast tests. Encourage engineers to add size="small"
+# to their tests that run under 1 minute. Ideally that should be Bazel's
+# default, but it's hard to change or intercept.
+test --test_verbose_timeout_warnings
+
+# Specifies desired output mode for running tests.
+# Valid values are
+#   'summary' to output only test status summary
+#   'errors' to also print test logs for failed tests
+#   'all' to print logs for all tests
+#   'streamed' to output logs for all tests in real time
+#     (this will force tests to be executed locally one at a time regardless of
+#     --test_strategy value).
+test --test_output=errors
+
+# Specifies the desired format ot the test summary.
+# Valid values are
+#   'short' to print information only about tests executed
+#   'terse', to print information only about unsuccessful tests that were run
+#   'detailed' to print detailed information about failed test cases
+#   'none' to omit the summary
+test --test_summary=detailed
+
+################################################
+# Release
+################################################
+
+# Teach Bazel how to get version info from Git when needed, typically in a build
+# with --stamp
+build:release --workspace_status_command=bazel/workspace/stamp_vars.sh
+
+# Burn in the current state (timestamp, SHA, etc.)
+build:release --stamp
+
+###############################
+# Load any settings specific to the current user. .bazelrc.user should appear in
+# .gitignore so that settings are not shared with team members This needs to be
+# last statement in this config, as the user configuration should be able to
+# overwrite flags from this file. See
+# https://docs.bazel.build/versions/master/best-practices.html#bazelrc (Note
+# that we use .bazelrc.user so the file appears next to .bazelrc in directory
+# listing, rather than user.bazelrc as suggested in the Bazel docs)
+try-import %workspace%/.bazelrc.user

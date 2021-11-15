@@ -1,0 +1,54 @@
+load("//bazel/rules:history_server.bzl", "history_server")
+load("//bazel/rules:webpack_cli.bzl", "webpack_cli")
+
+# Build the application with webpack in production mode
+webpack_cli(
+    name = "build_production",
+    args = [
+        "--mode=production",
+    ],
+    config = "webpack.config.production.js",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# Build the application with webpack in development mode
+webpack_cli(
+    name = "build_development",
+    args = [
+        "--mode=development",
+    ],
+    config = "webpack.config.development.js",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# Serve the development site with history-server
+history_server(
+    name = "serve_development",
+    port = 8080,
+    root = ":build_development",
+)
+
+# Serve the development site with history-server
+history_server(
+    name = "serve_production",
+    port = 8080,
+    root = ":build_production",
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "src/**/*",
+    ]) + [
+        ".browserslistrc",
+        "env.config.js",
+        "tsconfig.json",
+    ],
+)

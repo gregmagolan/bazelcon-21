@@ -1,0 +1,4131 @@
+{
+  "otherData": {
+    "build_id": "50ffc198-7ea2-4608-b7a9-87cc7ddf9186",
+    "output_base": "/private/var/tmp/_bazel_greg/abef66594bc298a7bb05c1660ea447bc",
+    "date": "Sun Nov 14 19:17:32 PST 2021"
+  },
+  "traceEvents": [
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0,
+      "args": { "name": "Critical Path" }
+    },
+    {
+      "name": "thread_sort_index",
+      "ph": "M",
+      "pid": 1,
+      "tid": 0,
+      "args": { "sort_index": 0 }
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2652,
+      "args": { "name": "Main Thread" }
+    },
+    {
+      "name": "thread_sort_index",
+      "ph": "M",
+      "pid": 1,
+      "tid": 2652,
+      "args": { "sort_index": "1" }
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Launch Blaze",
+      "ph": "X",
+      "ts": -94000,
+      "dur": 94000,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Initialize command",
+      "ph": "i",
+      "ts": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStartupOptionsModule.beforeCommand",
+      "ph": "X",
+      "ts": 2111,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoSpawnCacheModule.beforeCommand",
+      "ph": "X",
+      "ts": 2120,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandLogModule.beforeCommand",
+      "ph": "X",
+      "ts": 2121,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SleepPreventionModule.beforeCommand",
+      "ph": "X",
+      "ts": 2122,
+      "dur": 172,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelFileSystemModule.beforeCommand",
+      "ph": "X",
+      "ts": 2301,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MobileInstallModule.beforeCommand",
+      "ph": "X",
+      "ts": 2302,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelWorkspaceStatusModule.beforeCommand",
+      "ph": "X",
+      "ts": 2303,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelDiffAwarenessModule.beforeCommand",
+      "ph": "X",
+      "ts": 2303,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteModule.beforeCommand",
+      "ph": "X",
+      "ts": 2304,
+      "dur": 376,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRepositoryModule.beforeCommand",
+      "ph": "X",
+      "ts": 2689,
+      "dur": 204,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkRepositoryDebugModule.beforeCommand",
+      "ph": "X",
+      "ts": 2901,
+      "dur": 25,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkspaceRuleModule.beforeCommand",
+      "ph": "X",
+      "ts": 2931,
+      "dur": 4,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelCoverageReportModule.beforeCommand",
+      "ph": "X",
+      "ts": 2936,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkDebuggerModule.beforeCommand",
+      "ph": "X",
+      "ts": 2937,
+      "dur": 8,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RepositoryResolvedModule.beforeCommand",
+      "ph": "X",
+      "ts": 2947,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheHitReportingModule.beforeCommand",
+      "ph": "X",
+      "ts": 2955,
+      "dur": 11,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SpawnLogModule.beforeCommand",
+      "ph": "X",
+      "ts": 2970,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputFilteringModule.beforeCommand",
+      "ph": "X",
+      "ts": 2971,
+      "dur": 6,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkerModule.beforeCommand",
+      "ph": "X",
+      "ts": 2979,
+      "dur": 9,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheFileDigestsModule.beforeCommand",
+      "ph": "X",
+      "ts": 2989,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StandaloneModule.beforeCommand",
+      "ph": "X",
+      "ts": 2990,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SandboxModule.beforeCommand",
+      "ph": "X",
+      "ts": 2991,
+      "dur": 6,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildSummaryStatsModule.beforeCommand",
+      "ph": "X",
+      "ts": 2998,
+      "dur": 19,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "DynamicExecutionModule.beforeCommand",
+      "ph": "X",
+      "ts": 3022,
+      "dur": 22,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NinjaRulesModule.beforeCommand",
+      "ph": "X",
+      "ts": 3046,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRulesModule.beforeCommand",
+      "ph": "X",
+      "ts": 3047,
+      "dur": 10,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStrategyModule.beforeCommand",
+      "ph": "X",
+      "ts": 3058,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoOpConnectivityModule.beforeCommand",
+      "ph": "X",
+      "ts": 3059,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuildEventServiceModule.beforeCommand",
+      "ph": "X",
+      "ts": 3060,
+      "dur": 45,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CallcountsModule.beforeCommand",
+      "ph": "X",
+      "ts": 3111,
+      "dur": 7,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AllocationTrackerModule.beforeCommand",
+      "ph": "X",
+      "ts": 3119,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PostGCMemoryUseRecorderModule.beforeCommand",
+      "ph": "X",
+      "ts": 3120,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "GcAfterBuildModule.beforeCommand",
+      "ph": "X",
+      "ts": 3123,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PackageMetricsModule.beforeCommand",
+      "ph": "X",
+      "ts": 3126,
+      "dur": 8,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MetricsModule.beforeCommand",
+      "ph": "X",
+      "ts": 3136,
+      "dur": 39,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuiltinCommandModule.beforeCommand",
+      "ph": "X",
+      "ts": 3180,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "setup event handler",
+      "ph": "X",
+      "ts": 3400,
+      "dur": 92,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "replay stored events",
+      "ph": "X",
+      "ts": 3498,
+      "dur": 173,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "announce rc options",
+      "ph": "X",
+      "ts": 3678,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandEnv.beforeCommand",
+      "ph": "X",
+      "ts": 3687,
+      "dur": 55,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStartupOptionsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3752,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoSpawnCacheModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3754,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandLogModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3755,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SleepPreventionModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3756,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelFileSystemModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3756,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MobileInstallModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3757,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelWorkspaceStatusModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3758,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelDiffAwarenessModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3759,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3760,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRepositoryModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3760,
+      "dur": 10,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkRepositoryDebugModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3772,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkspaceRuleModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3773,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelCoverageReportModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3774,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkDebuggerModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3774,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RepositoryResolvedModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3775,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheHitReportingModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3776,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SpawnLogModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3776,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputFilteringModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3777,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkerModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3778,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheFileDigestsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3779,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StandaloneModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3779,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SandboxModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3780,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildSummaryStatsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3781,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "DynamicExecutionModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3781,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NinjaRulesModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3782,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRulesModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3782,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStrategyModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3783,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoOpConnectivityModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3784,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuildEventServiceModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3784,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CallcountsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3785,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AllocationTrackerModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3786,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PostGCMemoryUseRecorderModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3787,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "GcAfterBuildModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3787,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PackageMetricsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3788,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MetricsModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3789,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuiltinCommandModule.injectExtraPrecomputedValues",
+      "ph": "X",
+      "ts": 3789,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "preparePackageLoading",
+      "ph": "X",
+      "ts": 3835,
+      "dur": 72,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "setDeletedPackages",
+      "ph": "X",
+      "ts": 3912,
+      "dur": 11,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 12838,
+      "dur": 11,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 13045,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "fsvc.getDirtyKeys",
+      "ph": "X",
+      "ts": 13115,
+      "dur": 552472,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "fsvc.getDirtyExternalKeys",
+      "ph": "X",
+      "ts": 565709,
+      "dur": 17165,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "handleDiffs",
+      "ph": "X",
+      "ts": 3930,
+      "dur": 579211,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ProjectFileSupport.getTargets",
+      "ph": "X",
+      "ts": 583184,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildRequest.create",
+      "ph": "X",
+      "ts": 583189,
+      "dur": 170,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "validateOptions",
+      "ph": "X",
+      "ts": 583369,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "createBuildOptions",
+      "ph": "X",
+      "ts": 583374,
+      "dur": 161,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildStartingEvent",
+      "ph": "X",
+      "ts": 583539,
+      "dur": 176,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Evaluate target patterns",
+      "ph": "i",
+      "ts": 583781,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "skyframe evaluator",
+      "name": "Parallel Evaluator evaluation",
+      "ph": "X",
+      "ts": 586107,
+      "dur": 2268,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 586093,
+      "dur": 2290,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "evaluateTargetPatterns",
+      "ph": "X",
+      "ts": 583785,
+      "dur": 4612,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Load and analyze dependencies",
+      "ph": "i",
+      "ts": 588412,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588617,
+      "dur": 9,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588637,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588646,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588653,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588659,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588663,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588669,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588676,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588680,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588686,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588690,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588696,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588701,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588706,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588710,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588717,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588723,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588729,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588735,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588740,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 588764,
+      "dur": 3,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 589302,
+      "dur": 5,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 589484,
+      "dur": 4,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 589842,
+      "dur": 4,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "createConfigurations",
+      "ph": "X",
+      "ts": 588751,
+      "dur": 1119,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 589912,
+      "dur": 3,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 589967,
+      "dur": 4,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AnalysisUtils.getTargetsWithConfigs",
+      "ph": "X",
+      "ts": 589874,
+      "dur": 220,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 590215,
+      "dur": 30,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "skyframeExecutor.configureTargets",
+      "ph": "X",
+      "ts": 590160,
+      "dur": 105,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "skyframeExecutor.findArtifactConflicts",
+      "ph": "X",
+      "ts": 594030,
+      "dur": 7,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594456,
+      "dur": 9,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594489,
+      "dur": 3,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594512,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594519,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594525,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594531,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594538,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594543,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594547,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594553,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594557,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594562,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594566,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594571,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594578,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594583,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594587,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594593,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594598,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594603,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594607,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594613,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594616,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594622,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594626,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594629,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594633,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594638,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594641,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594646,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594650,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594656,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594660,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594666,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594670,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594675,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594679,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594685,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594689,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594694,
+      "dur": 1,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594705,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 594947,
+      "dur": 5,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "runAnalysisPhase",
+      "ph": "X",
+      "ts": 588426,
+      "dur": 6589,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStartupOptionsModule.executorInit",
+      "ph": "X",
+      "ts": 595100,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStartupOptionsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595120,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStartupOptionsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595121,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoSpawnCacheModule.executorInit",
+      "ph": "X",
+      "ts": 595122,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoSpawnCacheModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595122,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoSpawnCacheModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595125,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandLogModule.executorInit",
+      "ph": "X",
+      "ts": 595126,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandLogModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595126,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CommandLogModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595126,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SleepPreventionModule.executorInit",
+      "ph": "X",
+      "ts": 595127,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SleepPreventionModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595127,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SleepPreventionModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595128,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelFileSystemModule.executorInit",
+      "ph": "X",
+      "ts": 595128,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelFileSystemModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595129,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelFileSystemModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595146,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MobileInstallModule.executorInit",
+      "ph": "X",
+      "ts": 595147,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MobileInstallModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595147,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MobileInstallModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595148,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelWorkspaceStatusModule.executorInit",
+      "ph": "X",
+      "ts": 595148,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelWorkspaceStatusModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595149,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelWorkspaceStatusModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595151,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelDiffAwarenessModule.executorInit",
+      "ph": "X",
+      "ts": 595152,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelDiffAwarenessModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595152,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelDiffAwarenessModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595152,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteModule.executorInit",
+      "ph": "X",
+      "ts": 595153,
+      "dur": 19,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595173,
+      "dur": 134,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595312,
+      "dur": 32,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRepositoryModule.executorInit",
+      "ph": "X",
+      "ts": 595348,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRepositoryModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595348,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRepositoryModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595349,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkRepositoryDebugModule.executorInit",
+      "ph": "X",
+      "ts": 595349,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkRepositoryDebugModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595350,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkRepositoryDebugModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595350,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkspaceRuleModule.executorInit",
+      "ph": "X",
+      "ts": 595351,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkspaceRuleModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595351,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkspaceRuleModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595352,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelCoverageReportModule.executorInit",
+      "ph": "X",
+      "ts": 595353,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelCoverageReportModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595353,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelCoverageReportModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595353,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkDebuggerModule.executorInit",
+      "ph": "X",
+      "ts": 595354,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkDebuggerModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595354,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StarlarkDebuggerModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595355,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RepositoryResolvedModule.executorInit",
+      "ph": "X",
+      "ts": 595355,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RepositoryResolvedModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595356,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "RepositoryResolvedModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595356,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheHitReportingModule.executorInit",
+      "ph": "X",
+      "ts": 595357,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheHitReportingModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595357,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheHitReportingModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595357,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SpawnLogModule.executorInit",
+      "ph": "X",
+      "ts": 595358,
+      "dur": 9,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SpawnLogModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595368,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SpawnLogModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595369,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputFilteringModule.executorInit",
+      "ph": "X",
+      "ts": 595369,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputFilteringModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595370,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputFilteringModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595370,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkerModule.executorInit",
+      "ph": "X",
+      "ts": 595371,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkerModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595371,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "WorkerModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595372,
+      "dur": 30,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheFileDigestsModule.executorInit",
+      "ph": "X",
+      "ts": 595403,
+      "dur": 100,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheFileDigestsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595509,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CacheFileDigestsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595510,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StandaloneModule.executorInit",
+      "ph": "X",
+      "ts": 595511,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StandaloneModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595511,
+      "dur": 14,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "StandaloneModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595529,
+      "dur": 56,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SandboxModule.executorInit",
+      "ph": "X",
+      "ts": 595590,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SandboxModule.registerActionContexts",
+      "ph": "X",
+      "ts": 595591,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "shouldUseWindowsSandbox",
+      "ph": "X",
+      "ts": 595611,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "SandboxModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 595591,
+      "dur": 8892,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildSummaryStatsModule.executorInit",
+      "ph": "X",
+      "ts": 604493,
+      "dur": 14,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildSummaryStatsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604510,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BuildSummaryStatsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604511,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "DynamicExecutionModule.executorInit",
+      "ph": "X",
+      "ts": 604512,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "DynamicExecutionModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604513,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "DynamicExecutionModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604513,
+      "dur": 7,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NinjaRulesModule.executorInit",
+      "ph": "X",
+      "ts": 604521,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NinjaRulesModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604522,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NinjaRulesModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604522,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRulesModule.executorInit",
+      "ph": "X",
+      "ts": 604523,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRulesModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604523,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelRulesModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604523,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStrategyModule.executorInit",
+      "ph": "X",
+      "ts": 604524,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStrategyModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604524,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelStrategyModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604528,
+      "dur": 18,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoOpConnectivityModule.executorInit",
+      "ph": "X",
+      "ts": 604549,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoOpConnectivityModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604550,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "NoOpConnectivityModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604550,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuildEventServiceModule.executorInit",
+      "ph": "X",
+      "ts": 604551,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuildEventServiceModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604551,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuildEventServiceModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604551,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CallcountsModule.executorInit",
+      "ph": "X",
+      "ts": 604552,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CallcountsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604552,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "CallcountsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604553,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AllocationTrackerModule.executorInit",
+      "ph": "X",
+      "ts": 604553,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AllocationTrackerModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604554,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "AllocationTrackerModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604554,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PostGCMemoryUseRecorderModule.executorInit",
+      "ph": "X",
+      "ts": 604555,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PostGCMemoryUseRecorderModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604555,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PostGCMemoryUseRecorderModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604555,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "GcAfterBuildModule.executorInit",
+      "ph": "X",
+      "ts": 604556,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "GcAfterBuildModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604556,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "GcAfterBuildModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604557,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PackageMetricsModule.executorInit",
+      "ph": "X",
+      "ts": 604557,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PackageMetricsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604558,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "PackageMetricsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604558,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MetricsModule.executorInit",
+      "ph": "X",
+      "ts": 604559,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MetricsModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604559,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "MetricsModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604559,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuiltinCommandModule.executorInit",
+      "ph": "X",
+      "ts": 604560,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuiltinCommandModule.registerActionContexts",
+      "ph": "X",
+      "ts": 604560,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "BazelBuiltinCommandModule.registerSpawnStrategies",
+      "ph": "X",
+      "ts": 604560,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "postProcessAnalysisResult",
+      "ph": "X",
+      "ts": 604846,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ExecutionTool.init",
+      "ph": "X",
+      "ts": 604851,
+      "dur": 14,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Prepare for build",
+      "ph": "i",
+      "ts": 604883,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "plantSymlinkForest",
+      "ph": "X",
+      "ts": 604886,
+      "dur": 2423,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "Starting local output build",
+      "ph": "X",
+      "ts": 607320,
+      "dur": 18,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "startLocalOutputBuild",
+      "ph": "X",
+      "ts": 607319,
+      "dur": 21,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "OutputDirectoryLinksUtils.createOutputDirectoryLinks",
+      "ph": "X",
+      "ts": 607629,
+      "dur": 227,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "createBuilder",
+      "ph": "X",
+      "ts": 607872,
+      "dur": 55,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ExecutionStartingEvent",
+      "ph": "X",
+      "ts": 607943,
+      "dur": 71,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "configureResourceManager",
+      "ph": "X",
+      "ts": 608028,
+      "dur": 8,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Build artifacts",
+      "ph": "i",
+      "ts": 608042,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "getDirtyActionValues.filter_actions",
+      "ph": "X",
+      "ts": 608102,
+      "dur": 71247,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "getDirtyActionValues.stat_files",
+      "ph": "X",
+      "ts": 679565,
+      "dur": 6555,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "detectModifiedOutputFiles",
+      "ph": "X",
+      "ts": 608046,
+      "dur": 78271,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "configureActionExecutor",
+      "ph": "X",
+      "ts": 686327,
+      "dur": 2,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "skyframeActionExecutor.prepareForExecution",
+      "ph": "X",
+      "ts": 686561,
+      "dur": 73,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 5810,
+      "args": { "name": "skyframe-evaluator 0" }
+    },
+    {
+      "name": "thread_sort_index",
+      "ph": "M",
+      "pid": 1,
+      "tid": 5810,
+      "args": { "sort_index": "10000" }
+    },
+    {
+      "cat": "general information",
+      "name": "action.prepare",
+      "ph": "X",
+      "ts": 687548,
+      "dur": 165,
+      "pid": 1,
+      "tid": 5810
+    },
+    {
+      "cat": "general information",
+      "name": "ActionContinuation.execute",
+      "ph": "X",
+      "ts": 687829,
+      "dur": 339,
+      "pid": 1,
+      "tid": 5810
+    },
+    {
+      "cat": "complete action execution",
+      "name": "actuallyCompleteAction",
+      "ph": "X",
+      "ts": 688175,
+      "dur": 336,
+      "pid": 1,
+      "tid": 5810
+    },
+    {
+      "cat": "action processing",
+      "name": "BazelWorkspaceStatusAction stable-status.txt",
+      "ph": "X",
+      "ts": 687372,
+      "dur": 1184,
+      "pid": 1,
+      "tid": 5810
+    },
+    {
+      "cat": "general information",
+      "name": "postprocessing.run",
+      "ph": "X",
+      "ts": 688562,
+      "dur": 32,
+      "pid": 1,
+      "tid": 5810
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 5821,
+      "args": { "name": "skyframe-evaluator 11" }
+    },
+    {
+      "name": "thread_sort_index",
+      "ph": "M",
+      "pid": 1,
+      "tid": 5821,
+      "args": { "sort_index": "10011" }
+    },
+    {
+      "cat": "general information",
+      "name": "action.prepare",
+      "ph": "X",
+      "ts": 694375,
+      "dur": 2382,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "name": "thread_name",
+      "ph": "M",
+      "pid": 1,
+      "tid": 19,
+      "args": { "name": "Garbage Collector" }
+    },
+    {
+      "name": "thread_sort_index",
+      "ph": "M",
+      "pid": 1,
+      "tid": 19,
+      "args": { "sort_index": "2" }
+    },
+    {
+      "cat": "gc notification",
+      "name": "minor GC",
+      "ph": "X",
+      "ts": 912238,
+      "dur": 3000,
+      "pid": 1,
+      "tid": 19
+    },
+    {
+      "cat": "gc notification",
+      "name": "minor GC",
+      "ph": "X",
+      "ts": 5721062,
+      "dur": 14000,
+      "pid": 1,
+      "tid": 19
+    },
+    {
+      "cat": "gc notification",
+      "name": "minor GC",
+      "ph": "X",
+      "ts": 10633902,
+      "dur": 25000,
+      "pid": 1,
+      "tid": 19
+    },
+    {
+      "cat": "general information",
+      "name": "MerkleTree.build(ActionInput)",
+      "ph": "X",
+      "ts": 698594,
+      "dur": 12003243,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "MerkleTree.build(ActionInput)",
+      "ph": "X",
+      "ts": 12702469,
+      "dur": 57636,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "MerkleTree.build(ActionInput)",
+      "ph": "X",
+      "ts": 12760236,
+      "dur": 28,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "remote action cache check",
+      "name": "check cache hit",
+      "ph": "X",
+      "ts": 12763125,
+      "dur": 1591,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "AbstractSpawnStrategy.getInputMapping",
+      "ph": "X",
+      "ts": 12764852,
+      "dur": 1312,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "sandbox.createFileSystem",
+      "ph": "X",
+      "ts": 12767875,
+      "dur": 64249,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "context.prefetchInputs",
+      "ph": "X",
+      "ts": 12832134,
+      "dur": 3,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "subprocess.run",
+      "ph": "X",
+      "ts": 12832139,
+      "dur": 1467227,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "sandbox.verifyPostCondition",
+      "ph": "X",
+      "ts": 14299374,
+      "dur": 0,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "sandbox.copyOutputs",
+      "ph": "X",
+      "ts": 14299375,
+      "dur": 224,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "sandbox.delete",
+      "ph": "X",
+      "ts": 14299604,
+      "dur": 144,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "RemoteCache.checkForConcurrentModifications",
+      "ph": "X",
+      "ts": 14299792,
+      "dur": 1291,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "ActionContinuation.execute",
+      "ph": "X",
+      "ts": 696934,
+      "dur": 13610849,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "complete action execution",
+      "name": "actuallyCompleteAction",
+      "ph": "X",
+      "ts": 14307789,
+      "dur": 1258,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "action processing",
+      "name": "Action examples/snowpack/dist",
+      "ph": "X",
+      "ts": 694129,
+      "dur": 13615060,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "general information",
+      "name": "postprocessing.run",
+      "ph": "X",
+      "ts": 14309195,
+      "dur": 1716,
+      "pid": 1,
+      "tid": 5821
+    },
+    {
+      "cat": "skyframe evaluator",
+      "name": "Parallel Evaluator evaluation",
+      "ph": "X",
+      "ts": 686788,
+      "dur": 13625186,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "ParallelEvaluator.eval",
+      "ph": "X",
+      "ts": 686672,
+      "dur": 13625306,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "Saving action cache",
+      "ph": "X",
+      "ts": 14312215,
+      "dur": 870,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "Show results",
+      "ph": "X",
+      "ts": 14313206,
+      "dur": 2503,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "Show artifacts",
+      "ph": "X",
+      "ts": 14315714,
+      "dur": 0,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "general information",
+      "name": "buildTargets",
+      "ph": "X",
+      "ts": 583368,
+      "dur": 13732366,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "build phase marker",
+      "name": "Complete build",
+      "ph": "i",
+      "ts": 14315754,
+      "pid": 1,
+      "tid": 2652
+    },
+    {
+      "cat": "critical path component",
+      "name": "action 'Action examples/snowpack/dist'",
+      "ph": "X",
+      "ts": 691228,
+      "dur": 13617841,
+      "pid": 1,
+      "tid": 0
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "0.54" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 1000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 1200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 1400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 1600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 1800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 2000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 2200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 2400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 2600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 2800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 3000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 3200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 3400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 3600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 3800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 4000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 4200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 4400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 4600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 4800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 5000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 5200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 5400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 5600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 5800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 6000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 6200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 6400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 6600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 6800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 7000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 7200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 7400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 7600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 7800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 8000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 8200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 8400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 8600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 8800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 9000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 9200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 9400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 9600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 9800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 10000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 10200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 10400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 10600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 10800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 11000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 11200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 11400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 11600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 11800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 12000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 12200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 12400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 12600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 12800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 13000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 13200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 13400711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 13600711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 13800711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 14000711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "1.0" }
+    },
+    {
+      "name": "action count",
+      "ph": "C",
+      "ts": 14200711,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "action": "0.54" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 1863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "6.947987416515591" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 1001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0794533642079456" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 2001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0840497008104482" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 3001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0566153073565403" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 4001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.060475328352358" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 5001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.2257356317254515" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 6001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0653185246542909" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 7001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0689994534646658" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 8001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0490354969802773" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 9001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0603683222109093" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 10001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.32106170942017" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 11001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "1.0662850515830362" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 12001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "0.8883493017232168" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 13001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "0.004477660160558237" }
+    },
+    {
+      "name": "CPU usage (Bazel)",
+      "cname": "good",
+      "ph": "C",
+      "ts": 14001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "cpu": "3.207336441617712E-4" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 1863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "897.7860000000001" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 1001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "685.0400000000001" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 2001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "844.98" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 3001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "984.3439999999998" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 4001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "1092.86" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 5001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "1024.444" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 6001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "741.7360000000001" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 7001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "875.212" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 8001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "1010.8520000000001" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 9001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "1146.4640000000002" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 10001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "992.02" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 11001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "810.5759999999999" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 12001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "950.232" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 13001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "1030.0" }
+    },
+    {
+      "name": "Memory usage (Bazel)",
+      "cname": "olive",
+      "cname": "olive",
+      "ph": "C",
+      "ts": 14001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "memory": "188.49000000000007" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 1863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "3.1202295075252544" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 1001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.700830636990664" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 2001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.3675003824982446" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 3001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.2563276381555852" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 4001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.3133419701806481" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 5001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.417596510494689" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 6001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.2787830940469094" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 7001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.309976913256933" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 8001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.2487165769672084" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 9001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.3256441716122003" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 10001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.5672232008364604" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 11001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "0.994176866676642" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 12001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "0.8339569597895962" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 13001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "1.298227231439152" }
+    },
+    {
+      "name": "CPU usage (total)",
+      "cname": "rail_load",
+      "ph": "C",
+      "ts": 14001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system cpu": "0.3939816513761469" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 1863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55394.602" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 1001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55396.522000000004" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 2001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55401.716" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 3001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55416.65099999998" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 4001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55397.69899999999" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 5001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55394.27099999999" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 6001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55391.469000000005" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 7001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55379.0" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 8001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55376.29700000001" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 9001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55377.46400000001" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 10001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55378.526" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 11001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55375.39899999999" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 12001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55378.380000000005" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 13001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "55447.007000000005" }
+    },
+    {
+      "name": "Memory usage (total)",
+      "cname": "bad",
+      "ph": "C",
+      "ts": 14001863,
+      "pid": 1,
+      "tid": 2652,
+      "args": { "system memory": "10156.317000000003" }
+    },
+    {
+      "cat": "general information",
+      "name": "Finishing",
+      "ph": "i",
+      "ts": 14327775,
+      "pid": 1,
+      "tid": 2652
+    }
+  ]
+}

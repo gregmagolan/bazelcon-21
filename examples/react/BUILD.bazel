@@ -1,0 +1,110 @@
+load("@aspect_bazel_lib//lib:copy_to_directory.bzl", "copy_to_directory")
+load("@io_bazel_rules_sass//:defs.bzl", sass = "multi_sass_binary")
+load("@npm//html-insert-assets:index.bzl", "html_insert_assets")
+load("//bazel/rules:history_server.bzl", "history_server")
+load("//bazel/rules:swc.bzl", "swc_bundle", "swc_compile", "swc_minify")
+load("//bazel/rules:typecheck.bzl", "typecheck_test")
+
+# Compile sass
+sass(
+    name = "css",
+    srcs = [":sass_sources"],
+)
+
+# Compile typescript with swc
+swc_compile(
+    name = "js",
+    args = ["src"],
+    data = [
+        ":ts_sources",
+        "@npm//:node_modules",
+    ],
+    swcrc = ".swcrc-compile",
+)
+
+# Bundle js with swc (spack aka swcpack)
+swc_bundle(
+    name = "bundle",
+    out = "bundle.js",
+    data = [
+        "spack.config.js",
+        ":js",
+        "@npm//:node_modules",
+    ],
+    entry = "$(execpath :js)/entry.js",
+)
+
+# Minify with swc
+swc_minify(
+    name = "minify",
+    src = ":bundle.js",
+    out = "bundle.min.js",
+    data = [
+        ":bundle",
+        ":bundle.js",
+        "@npm//:node_modules",
+    ],
+    swcrc = ".swcrc-minify",
+)
+
+# Typecheck with typescript compiler
+typecheck_test(
+    name = "typecheck",
+    data = [
+        ":ts_sources",
+        "@npm//:node_modules",
+    ],
+    tsconfig = "tsconfig.json",
+)
+
+# Insert scripts and assets into the source index.html
+html_insert_assets(
+    name = "index",
+    outs = ["index.html"],
+    args = [
+        "--html $(execpath :src/index.html)",
+        "--out $@",
+        "--stamp",
+        "--stylesheets",
+        "css/app.css",
+        "--scripts",
+        "js/bundle.min.js",
+    ],
+    data = ["src/index.html"],
+)
+
+# Merge all of the output artifacts into a dist directory
+copy_to_directory(
+    name = "dist",
+    srcs = [
+        ":css",
+        ":index",
+        ":minify",
+    ],
+    replace_prefixes = {
+        "bundle.": "js/bundle.",
+        "src/assets/stylesheets": "css",
+    },
+)
+
+# Serve the site with history-server
+history_server(
+    name = "serve",
+    port = 8080,
+    root = ":dist",
+)
+
+# Convienience target
+filegroup(
+    name = "ts_sources",
+    srcs = glob([
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ]),
+)
+
+# Convienience target
+filegroup(
+    name = "sass_sources",
+    srcs = glob(["src/**/*.scss"]),
+)

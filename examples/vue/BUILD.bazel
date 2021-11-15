@@ -1,0 +1,28 @@
+load("//bazel/rules:vue.bzl", "vue")
+
+# Build the site with vue
+vue(
+    name = "dist",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# TODO: add a serve target
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob([
+        "public/**/*",
+        "src/**/*",
+    ]) + [
+        ".browserslistrc",
+        ".env",
+        "babel.config.js",
+        "package.json",
+        "postcss.config.js",
+        "vue.config.js",
+    ],
+)

@@ -1,0 +1,28 @@
+load("//bazel/rules:history_server.bzl", "history_server")
+load("//bazel/rules:vite.bzl", "vite")
+
+# Build the site with vite
+vite(
+    name = "dist",
+    data = [
+        ":sources",
+        "@npm//:node_modules",
+    ],
+)
+
+# Serve the site with history-server
+history_server(
+    name = "serve",
+    port = 8080,
+    root = ":dist",
+)
+
+# Convienience target
+filegroup(
+    name = "sources",
+    srcs = glob(["src/**/*"]) + [
+        "index.html",
+        "vite.config.ts",
+        "tsconfig.json",
+    ],
+)
