@@ -1,6 +1,9 @@
 # bazelcon-21
 
-Example repository for Building Web Applications with Bazel talk at BazelCon'21.
+Example repository for
+[Building Web Applications with Bazel](https://docs.google.com/presentation/d/10qqLig5BHZVCKyJi-vLCbUg3LLDd0WJoUl1R3ghDQWI/edit?usp=sharing)
+talk at
+[BazelCon'21](https://opensourcelive.withgoogle.com/events/bazelcon2021).
 
 These examples are for demonstration purposes and should not be considered
 production ready.
@@ -11,21 +14,23 @@ test tools in general and not to show how best to use it with any one tool.
 To this end, there are examples of building & testing with a wide range of tools
 include:
 
-- Angular CLI
-- Next.js
-- Parcel
-- SWC (react & nestjs examples)
-- Parcel
-- Snowpack
-- Vite
-- Vue
-- Webpack CLI
-- Jest
+- [Angular CLI](https://angular.io/cli)
+- [Jest](https://jestjs.io/)
+- [Next.js](https://nextjs.org/)
+- [Parcel](https://parceljs.org/)
+- [Snowpack](https://www.snowpack.dev/)
+- [SWC](https://github.com/swc-project/swc) (react & nestjs examples)
+- [Vite](https://vitejs.dev/)
+- [Vue](https://vuejs.org/)
+- [Webpack CLI](https://webpack.js.org/api/cli/)
 
 Notably missing and to be added soon are:
 
-- React app transpiled and bundled with discrete esbuild targets
-- Angular app transpiled with discrete ngc steps and bundled with esbuild
+- React app transpiled and bundled with discrete
+  [esbuild](https://esbuild.github.io/) targets
+- Angular app transpiled with discrete
+  [ngc](https://angular.io/guide/angular-compiler-options) steps and bundled
+  with [esbuild](https://esbuild.github.io/)
 
 Some TODOs are littered throughout BUILD files for targets to be added in the
 future.
