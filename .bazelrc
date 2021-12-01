@@ -31,6 +31,10 @@ common --enable_platform_specific_config
 #
 # build --disk_cache=~/.cache/bazel-disk-cache
 
+# Merkle tree calculations will be memoized to improve the remote cache hit
+# checking speed
+build --experimental_remote_merkle_tree_cache
+
 # Remote cache optimizations
 build --experimental_inmemory_jdeps_files
 build --experimental_inmemory_dotd_files
